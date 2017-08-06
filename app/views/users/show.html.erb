@@ -1,0 +1,36 @@
+<h3><%= t('view.user.details') %>:</h3>
+
+<p>
+  <strong><%= User.human_attribute_name("uid") %>:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name("sign_in_count") %>:</strong>
+  <%= @user.sign_in_count %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name("current_sign_in_at") %>:</strong>
+  <%= @user.current_sign_in_at %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name("last_sign_in_at") %>:</strong>
+  <%= @user.last_sign_in_at %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name("current_sign_in_ip") %>:</strong>
+  <%= @user.current_sign_in_ip %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name("last_sign_in_ip") %>:</strong>
+  <%= @user.last_sign_in_ip %>
+</p>
+
+<p>
+  <%= link_to t('action.edit'), edit_user_path(@user), class: "btn btn-primary" %>
+  <%= link_to t('action.back'), users_path, class: "btn btn-secondary" %>
+</p>

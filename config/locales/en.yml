@@ -1,0 +1,56 @@
+en:
+  title:  
+    user:
+      new: "New user"
+      edit: "Edit user"
+    category:  
+      new: "New category"
+      edit: "Edit category"
+    manual:
+      new: "New manual"
+      edit: "Edit manual"
+  action:
+    actions: "Actions"
+    edit: "Edit"
+    show: "Show"
+    destroy: "Destroy"
+    save: "Save"
+    back: "Back"
+    sign_up: "Sign up"
+    user:
+      new: "Create user"
+    manual:
+      new: "Create manual"
+    category:
+      new: "Create category"
+    devise:
+      log_in: "Log in"
+      sign_up: "Sign up"
+      resend_confirmation: "Resend confirmation instructions"
+      reset_password: "Reset password"
+      resend: "Resend"
+      edit_profile: "Edit profile"
+      log_out: "Log out"
+  view:
+    search: "Search"
+    manuals: "MANUALS"
+    users: "Users"
+    langueges: "Language"
+    categories: "Categories"
+    devise:
+      email: "Email Address"
+      password: "Password"
+      remember_me: "Remember me"
+      name: "Name"
+      password_confirmation: "Password confirmation"
+      forgot_your_password: "Forgot your password?"
+      didnt_receive_confirmation: "Didn't receive confirmation instructions?"
+      sign_in_with: "Sign in with"
+    user:
+      details: "User details"
+    manual:
+      details: "Manual details"
+      select_category: "Select category"
+    category:
+      details: "Category details"
+  

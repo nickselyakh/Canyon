@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+<h2><%= t('action.devise.resend_confirmation') %></h2>
+
+<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+            <fieldset>
+  <%= devise_error_messages! %>
+
+            <div class="control-group">
+              <%= f.label :uid, t('view.devise.email'), class: "control-label" %>
+              <div class="controls">
+                <%= f.email_field :uid, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "form-control ", placeholder: t('view.devise.email') %>
+              </div>
+            </div>
+
+              <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                  <%= f.submit t('action.devise.resend'), class: "btn btn-primary btn-block" %>
+                </div>
+              </div>
+            </fieldset>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+
